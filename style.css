@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+    ),
+    url('futuristic-background-design_23-2148503793.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 250px;
+    cursor: pointer;
+    border-radius: 90px;
+    box-shadow: 0px 1px 8px rgb(161, 188, 37);
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 30px;
+    padding: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.navbar ul li:hover{
+    border-radius: 60px;
+    background-color: transparent;
+    border: 2px solid white;
+    box-shadow: 1px 1px 5px rgb(220, 108, 3);
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    cursor: pointer;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.profile-box{
+    color: white;
+    width: 80%;
+    padding: 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 10%;
+}
+
+.profile-pic{
+    height: 430px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    box-shadow: 2px 2px 5px rgb(20, 98, 175);
+    cursor: pointer;
+}
+
+.profile-pic:hover{
+    transform: scale(1.2);
+    transition: all 1.5s;
+    box-shadow: 8px 8px 15px rgb(20, 98, 175);
+}
+
+.profile-info{
+    margin-left: 25px;
+    border-left: transparent;
+    border-bottom: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: -15px 0.5px 1px rgb(161, 79, 79);
+}
+
+.profile-info h1{
+    font-size: 40px;
+    color: #BED754;
+}
+
+.profile-info h2{
+    font-size: 30px;
+    color: #99A8B2;
+}
+
+.profile-info h3{
+    font-size: 25px;
+    color: #E6D5B8;
+}
+
+.profile-info h4{
+    font-size: 20px;
+    color: #F1D4D4;
+}
+
+header {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+    box-shadow: 0px 10px 10px rgb(153, 165, 13);
+    border-radius: 20px;
+
+}
+
+section {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.about-me{
+    color: #b17f33;
+    font-size: 50px;
+}
+
+.hello{
+    color: #82bd6f;
+    padding: 3px;
+    font-size: 35px;
+}
+
+.para{
+    line-height: 1.6;
+    color: #D4ECDD;
+    padding: 5px;
+    font-size: 20px;
+}
