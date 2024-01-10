@@ -17,6 +17,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .navbar{
@@ -74,15 +75,16 @@
 .profile-pic{
     height: 430px;
     border-radius: 50%;
-    border: 2px solid transparent;
-    box-shadow: 2px 2px 5px rgb(20, 98, 175);
+    border: 0.5px solid rgb(7, 45, 84);
+    box-shadow: 4px 4px 10px rgb(20, 98, 175);
     cursor: pointer;
 }
 
 .profile-pic:hover{
     transform: scale(1.2);
     transition: all 1.5s;
-    box-shadow: 8px 8px 15px rgb(20, 98, 175);
+    box-shadow: 8px 8px 20px rgb(20, 98, 175);
+    border: none;
 }
 
 .profile-info{
@@ -91,7 +93,7 @@
     border-bottom: transparent;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: -15px 0.5px 1px rgb(161, 79, 79);
+    box-shadow: -15px 5px 1px rgb(161, 79, 79);
 }
 
 .profile-info h1{
@@ -114,15 +116,15 @@
     color: #F1D4D4;
 }
 
-header {
-    width: 30%;
+.aboutme-1 {
+    width: 20%;
     margin: auto;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     background-color: transparent;
-    box-shadow: 0px 10px 10px rgb(153, 165, 13);
-    border-radius: 20px;
-
+    border-radius: 30px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px rgb(192, 205, 52);
 }
 
 section {
@@ -133,8 +135,8 @@ section {
 }
 
 .about-me{
-    color: #b17f33;
-    font-size: 50px;
+    color: #d13f69;
+    font-size: 45px;
 }
 
 .hello{
@@ -148,4 +150,115 @@ section {
     color: #D4ECDD;
     padding: 5px;
     font-size: 20px;
+}
+
+.contact-me{
+    max-width: 450px;
+    margin: 40px auto;
+    background-color: transparent;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 0px 0px 20px white;
+}
+
+.cont-act{
+    color: rgb(9, 184, 164);
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 35px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: bisque;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: rgb(67, 181, 167);
+    border: 1px solid rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 10px;
+    font-size: 18px;
+    margin: 20px auto;
+    border-radius: 50px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(24, 148, 134);
+}
+
+.skill-header {
+    background-color: transparent;
+    padding: 20px;
+    width: 35%;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 40px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px rgb(174, 185, 51);
+}
+
+.skill-heading {
+    color: rgb(129, 220, 38);
+    word-spacing: 4px;
+}
+
+.skill-section {
+    padding: 15px;
+}
+
+.skill-head {
+    width: 35%;
+    margin: auto;
+    color: #d9a743;
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(199, 199, 199, 0.8);
+}
+
+.skill-para {
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.skill-ul {
+    list-style-type: none;
+}
+
+.skill-list {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(199, 199, 199, 0.5);
 }
