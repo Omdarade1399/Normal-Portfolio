@@ -11,7 +11,7 @@
     height: 100vh;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.4)
+        rgba(0, 0, 0, 0.7)
     ),
     url('futuristic-background-design_23-2148503793.avif');
     background-size: cover;
@@ -40,26 +40,32 @@
     list-style: none;
     display: inline-block;
     margin: 0px 30px;
-    padding: 15px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-}
-
-.navbar ul li:hover{
-    border-radius: 60px;
-    background-color: transparent;
-    border: 2px solid white;
-    box-shadow: 1px 1px 5px rgb(220, 108, 3);
-    transform: scale(1.1);
-    transition-duration: 0.3s;
-    transition-delay: 0.1s;
     cursor: pointer;
+    position: relative;
 }
 
 .navbar ul li a{
     text-decoration: none;
     color: white;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
     text-transform: uppercase;
+}    
+
+.navbar ul li::after{
+    content: '';
+    height: 5px;
+    background: #009688;
+    width: 0;
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
 }
 
 .profile-box{
@@ -77,13 +83,14 @@
     border-radius: 50%;
     border: 0.5px solid rgb(7, 45, 84);
     box-shadow: 4px 4px 10px rgb(20, 98, 175);
+    transition: all 0.5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
     cursor: pointer;
 }
 
 .profile-pic:hover{
     transform: scale(1.2);
-    transition: all 1.5s;
     box-shadow: 8px 8px 20px rgb(20, 98, 175);
+    transition: all 1.5s;
     border: none;
 }
 
@@ -220,7 +227,7 @@ input[type="submit"]:hover {
     text-align: center;
     border-radius: 40px;
     border: 1px solid white;
-    box-shadow: 0px 0px 20px rgb(174, 185, 51);
+    box-shadow: 0px 0px 20px rgb(195, 207, 65);
 }
 
 .skill-heading {
